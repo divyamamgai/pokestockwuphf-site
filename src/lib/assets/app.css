@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+img.logo {
+	width: 128px;
+	height: 128px;
+}
+
+div.main {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+
+div.main-container {
+	text-align: center;
+}
