@@ -1,2 +1,3 @@
 # pokestockwuphf-site
-Static website for pokestockwuphf
+
+Static website for pokestockwuphf.
