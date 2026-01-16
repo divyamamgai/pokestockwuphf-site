@@ -1,6 +1,9 @@
 <script lang="ts">
+	import { layoutState } from '$lib/state.svelte';
 	import productsAmazon from '$lib/data/products/amazon.json';
 	import ProductListing from '$lib/components/ProductListing.svelte';
+
+	layoutState.title = 'pokestockwuphf - Product Invitations';
 </script>
 
 <h1 class="m-10 text-5xl font-bold">Products</h1>
