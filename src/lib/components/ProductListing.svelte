@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="grid p-8 grid place-items-start border-2 rounded-lg border-gray-300 hover:border-gray-700"
+	class="grid p-8 grid place-items-start border-1 rounded-lg border-gray-300 hover:border-gray-700 shadow-md hover:shadow-lg transition duration-300"
 >
 	<img class="h-40 place-self-center object-contain" src={product.imageUrl} alt={product.name} />
 	<a
