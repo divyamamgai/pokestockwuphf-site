@@ -1,28 +1,4 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<link href="./_app/immutable/assets/0.B73tBOSO.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.Dz7SSbR4.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/ZZoQ6Q0t.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/Dpp1rAor.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/zu1wHie5.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.p-q61KE-.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/MtlMhPeI.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/BMrxP1t7.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/CFWXPTqf.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.ywIgRNLO.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/29Cg40T3.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/DrXkjwgm.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/Bd10G275.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/DD9ISPpN.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/3.-HTXR7uJ.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/DbkVW926.js"><!--12qhfyh--><link rel="icon" href="/_app/immutable/assets/favicon.CqGHSVoY.svg"/><!----><title>pokestockwuphf</title>
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[--><!----><!--[!--><!----><div class="flex items-center justify-center h-screen"><div class="grid place-items-center"><img class="logo" src="/_app/immutable/assets/favicon.CqGHSVoY.svg" alt="pokestockwuphf"/> <h1 class="text-5xl font-bold m-3">pokestockwuphf</h1> <div class="h-1 w-15 bg-gray-300 rounded-full m-3"></div> <p class="text-xl m-3 font-bold">Find your chase cards faster with coverage across 100+ UK TCG shops!</p> <p class="text-xl m-3 font-bold">Never miss a beat (or a box) with instant stock alerts!</p> <div class="h-1 w-15 bg-gray-300 rounded-full m-3"></div> <p class="text-xl m-3 italic">Comming Soon to a Discord Server near you...</p> <div class="h-1 w-15 bg-gray-300 rounded-full mt-3"></div> <!----><!-- Begin Brevo Form -->
+import{b,d as y,f as _,a as x}from"../chunks/BMrxP1t7.js";import"../chunks/DbkVW926.js";import{B as w,h as p,H as v,I as E,J as k,f as h,K as R,M as A,O as M,P as S,Q as D,R as l,D as u,G as O,F as g}from"../chunks/Dpp1rAor.js";import{s as L}from"../chunks/DrXkjwgm.js";import{l as C}from"../chunks/Bd10G275.js";function I(c,s,e=!1,o=!1,f=!1){var d=c,i="";w(()=>{var r=E;if(i===(i=s()??"")){p&&v();return}if(r.nodes!==null&&(k(r.nodes.start,r.nodes.end),r.nodes=null),i!==""){if(p){h.data;for(var t=v(),m=t;t!==null&&(t.nodeType!==R||t.data!=="");)m=t,t=A(t);if(t===null)throw M(),S;b(h,m),d=D(t);return}var a=i+"";e?a=`<svg>${a}</svg>`:o&&(a=`<math>${a}</math>`);var n=y(a);if((e||o)&&(n=l(n)),b(l(n),n.lastChild),e||o)for(;l(n);)d.before(l(n));else d.before(n)}})}const H=`<!-- Begin Brevo Form -->
 <!-- START - We recommend to place the below code in head tag of your website html  -->
 <style>
 	@font-face {
@@ -278,37 +254,12 @@
 	};
 
 	var AUTOHIDE = Boolean(0);
-</script>
+<\/script>
 
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"><\/script>
 
-<script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+<script src="https://www.google.com/recaptcha/api.js?hl=en"><\/script>
 
 <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
 <!-- End Brevo Form -->
-<!----></div></div><!----><!--]--><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
-			
-			<script>
-				{
-					__sveltekit_1v1hwwp = {
-						base: new URL(".", location).pathname.slice(0, -1)
-					};
-
-					const element = document.currentScript.parentElement;
-
-					Promise.all([
-						import("./_app/immutable/entry/start.Dz7SSbR4.js"),
-						import("./_app/immutable/entry/app.p-q61KE-.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 3],
-							data: [null,null],
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-</html>
+`;var N=_('<div class="flex items-center justify-center h-screen"><div class="grid place-items-center"><img class="logo" alt="pokestockwuphf"/> <h1 class="text-5xl font-bold m-3">pokestockwuphf</h1> <div class="h-1 w-15 bg-gray-300 rounded-full m-3"></div> <p class="text-xl m-3 font-bold">Find your chase cards faster with coverage across 100+ UK TCG shops!</p> <p class="text-xl m-3 font-bold">Never miss a beat (or a box) with instant stock alerts!</p> <div class="h-1 w-15 bg-gray-300 rounded-full m-3"></div> <p class="text-xl m-3 italic">Comming Soon to a Discord Server near you...</p> <div class="h-1 w-15 bg-gray-300 rounded-full mt-3"></div> <!></div></div>');function F(c){var s=N(),e=u(s),o=u(e),f=O(o,16);I(f,()=>H),g(e),g(s),w(()=>L(o,"src",C)),x(c,s)}export{F as component};
