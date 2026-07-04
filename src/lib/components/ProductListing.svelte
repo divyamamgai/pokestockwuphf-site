@@ -2,17 +2,29 @@
 	import type { Product } from '$lib/types';
 
 	const { product }: { product: Product } = $props();
+
+	// Affiliate link params (pokestockwuphf-21 is the Amazon Associates tag).
+	const href = $derived(
+		`${product.url}?&linkCode=ll1&tag=pokestockwuphf-21&language=en_GB&ref_=as_li_ss_tl`
+	);
 </script>
 
-<div
-	class="grid p-8 grid place-items-start border-1 rounded-lg border-gray-300 hover:border-gray-700 shadow-md hover:shadow-lg transition duration-300"
+<a
+	{href}
+	target="_blank"
+	rel="noopener noreferrer"
+	class="group flex flex-col rounded-2xl border border-brand-cream-dark bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-brand-sand hover:shadow-md"
 >
-	<img class="h-40 place-self-center object-contain" src={product.imageUrl} alt={product.name} />
-	<a
-		class="font-bold mt-4"
-		target="_blank"
-		href="{product.url}?&linkCode=ll1&tag=pokestockwuphf-21&language=en_GB&ref_=as_li_ss_tl"
-		>{product.name}</a
+	<img
+		class="mx-auto h-36 object-contain"
+		src={product.imageUrl}
+		alt={product.name}
+		loading="lazy"
+	/>
+	<span
+		class="mt-4 line-clamp-2 text-sm font-semibold text-brand-charcoal transition-colors group-hover:text-brand-red"
 	>
-	<span class="mt-2">{product.price}</span>
-</div>
+		{product.name}
+	</span>
+	<span class="mt-2 text-sm font-medium text-brand-charcoal-soft">{product.price}</span>
+</a>

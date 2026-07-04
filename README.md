@@ -1,3 +1,3 @@
 # pokestockwuphf-site
 
-Static website for pokestockwuphf.
+Static website for pokestockwuphf also known as PokeBell.

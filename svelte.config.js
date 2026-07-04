@@ -14,7 +14,16 @@ const config = {
 			fallback: undefined,
 			precompress: false,
 			strict: true
-		})
+		}),
+		prerender: {
+			// App screenshots are dropped into static/screenshots/ later. Until they
+			// exist the <img> references 404 during prerender — that's expected, so
+			// don't fail the build for those paths (the UI shows placeholders).
+			handleHttpError: ({ path, message }) => {
+				if (path.startsWith('/screenshots/')) return;
+				throw new Error(message);
+			}
+		}
 	}
 };
 

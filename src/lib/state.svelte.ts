@@ -1,1 +1,1 @@
-export const layoutState = $state({ title: 'pokestockwuphf' });
+export const layoutState = $state({ title: 'PokeBell' });

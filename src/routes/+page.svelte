@@ -1,20 +1,25 @@
 <script lang="ts">
-	import logo from '$lib/assets/favicon.svg';
-	import subscribeForm from '$lib/assets/subscribe-form.html?raw';
+	import { layoutState } from '$lib/state.svelte';
+	import Nav from '$lib/components/Nav.svelte';
+	import Hero from '$lib/components/Hero.svelte';
+	import Features from '$lib/components/Features.svelte';
+	import HowItWorks from '$lib/components/HowItWorks.svelte';
+	import Coverage from '$lib/components/Coverage.svelte';
+	import Waitlist from '$lib/components/Waitlist.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import { SUPPORTED_SHOP_COUNT_DISPLAY } from '$lib/config';
+
+	layoutState.title = `PokeBell — Instant TCG stock alerts for ${SUPPORTED_SHOP_COUNT_DISPLAY}+ UK shops`;
 </script>
 
-<div class="flex items-center justify-center h-screen">
-	<div class="grid place-items-center">
-		<img class="logo" src={logo} alt="pokestockwuphf" />
-		<h1 class="text-5xl font-bold m-3">pokestockwuphf</h1>
-		<div class="h-1 w-15 bg-gray-300 rounded-full m-3"></div>
-		<p class="text-xl m-3 font-bold">
-			Find your chase cards faster with coverage across 100+ UK TCG shops!
-		</p>
-		<p class="text-xl m-3 font-bold">Never miss a beat (or a box) with instant stock alerts!</p>
-		<div class="h-1 w-15 bg-gray-300 rounded-full m-3"></div>
-		<p class="text-xl m-3 italic">Comming Soon to a Discord Server near you...</p>
-		<div class="h-1 w-15 bg-gray-300 rounded-full mt-3"></div>
-		{@html subscribeForm}
-	</div>
-</div>
+<Nav />
+
+<main>
+	<Hero />
+	<Features />
+	<HowItWorks />
+	<Coverage />
+	<Waitlist />
+</main>
+
+<Footer />
