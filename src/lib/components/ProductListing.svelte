@@ -3,9 +3,9 @@
 
 	const { product }: { product: Product } = $props();
 
-	// Affiliate link params (pokestockwuphf-21 is the Amazon Associates tag).
+	// Affiliate link params (pokebell-21 is the Amazon Associates tag).
 	const href = $derived(
-		`${product.url}?&linkCode=ll1&tag=pokestockwuphf-21&language=en_GB&ref_=as_li_ss_tl`
+		`${product.url}?&linkCode=ll1&tag=pokebell-21&language=en_GB&ref_=as_li_ss_tl`
 	);
 </script>
 
