@@ -3,6 +3,12 @@
 		"shop": "Amazon",
 		"products": [
 			{
+				"name": "Pokémon TCG: Scarlet & Violet—Prismatic Evolutions Elite Trainer Box (1 Full Art Promo Card, 9 Boosters & Premium Accessories)",
+				"url": "https://www.amazon.co.uk/dp/B0DLPL7LC5",
+				"imageUrl": "https://m.media-amazon.com/images/I/81DG4MWqGAL._AC_SL1500_.jpg",
+				"price": "£43.57"
+			},
+			{
 				"name": "Pokémon TCG: Mega Greninja ex Premium Collection (1 Foil Promo Card, 1 Oversize Lenticular Card & 8 Booster Packs)",
 				"url": "https://www.amazon.co.uk/dp/B0GXJ8CSTY",
 				"imageUrl": "https://m.media-amazon.com/images/I/91E+9GLiyyL._AC_CR0%2C0%2C0%2C0_SX352_SY330_.jpg",

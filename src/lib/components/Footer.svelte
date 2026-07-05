@@ -28,6 +28,9 @@
 			<a href="/invitations" class="text-brand-charcoal-soft transition-colors hover:text-brand-red">
 				Invitation Products
 			</a>
+			<a href="/blog" class="text-brand-charcoal-soft transition-colors hover:text-brand-red">
+				Blog
+			</a>
 			<a href="/#waitlist" class="text-brand-charcoal-soft transition-colors hover:text-brand-red">
 				Join the waitlist
 			</a>
