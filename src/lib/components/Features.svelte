@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { SUPPORTED_SHOP_COUNT_DISPLAY } from '$lib/config';
+	import { reveal } from '$lib/actions/reveal';
 
 	type Feature = {
 		title: string;
@@ -49,7 +50,7 @@
 
 <section id="features" class="scroll-mt-20 py-20 sm:py-24">
 	<div class="mx-auto max-w-6xl px-5">
-		<div class="mx-auto max-w-2xl text-center">
+		<div class="reveal mx-auto max-w-2xl text-center" use:reveal>
 			<h2 class="text-3xl font-extrabold tracking-tight text-brand-charcoal sm:text-4xl">
 				Everything you need to catch the drop
 			</h2>
@@ -59,26 +60,30 @@
 		</div>
 
 		<div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-			{#each features as feature (feature.title)}
-				<div
-					class="group rounded-2xl border border-brand-cream-dark bg-white p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-brand-sand hover:shadow-md"
-				>
+			{#each features as feature, i (feature.title)}
+				<!-- Reveal wrapper (separate element so the card's own hover transform
+				     doesn't fight the reveal transform). Stagger by column. -->
+				<div class="reveal" use:reveal={{ delay: (i % 3) * 90 }}>
 					<div
-						class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-sand-soft/70 text-brand-red transition-colors group-hover:bg-brand-red group-hover:text-white"
+						class="group h-full rounded-2xl border border-brand-cream-dark bg-white p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-brand-sand hover:shadow-md"
 					>
-						<svg
-							class="h-6 w-6"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.7"
-							stroke="currentColor"
-							aria-hidden="true"
+						<div
+							class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-sand-soft/70 text-brand-red transition-colors group-hover:bg-brand-red group-hover:text-white"
 						>
-							<path stroke-linecap="round" stroke-linejoin="round" d={feature.icon} />
-						</svg>
+							<svg
+								class="h-6 w-6"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.7"
+								stroke="currentColor"
+								aria-hidden="true"
+							>
+								<path stroke-linecap="round" stroke-linejoin="round" d={feature.icon} />
+							</svg>
+						</div>
+						<h3 class="mt-5 text-lg font-bold text-brand-charcoal">{feature.title}</h3>
+						<p class="mt-2 text-brand-charcoal-soft">{feature.description}</p>
 					</div>
-					<h3 class="mt-5 text-lg font-bold text-brand-charcoal">{feature.title}</h3>
-					<p class="mt-2 text-brand-charcoal-soft">{feature.description}</p>
 				</div>
 			{/each}
 		</div>

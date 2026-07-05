@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { SUPPORTED_SHOP_COUNT_DISPLAY } from '$lib/config';
+	import { reveal } from '$lib/actions/reveal';
 
 	const stats = [
 		{ value: `${SUPPORTED_SHOP_COUNT_DISPLAY}+`, label: 'UK TCG shops monitored' },
@@ -12,7 +13,8 @@
 <section id="coverage" class="scroll-mt-20 py-20 sm:py-24">
 	<div class="mx-auto max-w-6xl px-5">
 		<div
-			class="rounded-3xl border border-brand-cream-dark bg-gradient-to-br from-white to-brand-cream-dark/50 p-10 sm:p-14"
+			class="reveal rounded-3xl border border-brand-cream-dark bg-gradient-to-br from-white to-brand-cream-dark/50 p-10 sm:p-14"
+			use:reveal
 		>
 			<div class="mx-auto max-w-2xl text-center">
 				<h2 class="text-3xl font-extrabold tracking-tight text-brand-charcoal sm:text-4xl">
@@ -35,17 +37,22 @@
 				{/each}
 			</dl>
 
-			<p
-				class="mt-10 flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-center text-sm text-brand-charcoal-soft"
-			>
+			<div class="mt-10 flex flex-wrap items-center justify-center gap-3">
+				<!-- Live now -->
 				<span
-					class="inline-flex items-center gap-1.5 rounded-full border border-brand-sand/60 bg-brand-sand-soft/60 px-3 py-1 font-semibold text-brand-charcoal"
+					class="inline-flex items-center gap-1.5 rounded-full border border-green-600/30 bg-green-600/10 px-3 py-1 text-sm font-semibold text-green-700"
+				>
+					<span class="h-1.5 w-1.5 animate-pulse rounded-full bg-green-600"></span>
+					Tracking Pokémon sealed products now
+				</span>
+				<!-- Coming soon -->
+				<span
+					class="inline-flex items-center gap-1.5 rounded-full border border-brand-sand/60 bg-brand-sand-soft/60 px-3 py-1 text-sm font-semibold text-brand-charcoal"
 				>
 					<span class="h-1.5 w-1.5 rounded-full bg-brand-sand"></span>
-					Coming soon
+					Coming soon · One Piece &amp; more TCGs
 				</span>
-				Pokémon sealed products today — One Piece and more TCGs are on the way.
-			</p>
+			</div>
 		</div>
 	</div>
 </section>

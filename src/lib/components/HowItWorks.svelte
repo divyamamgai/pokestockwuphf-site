@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { reveal } from '$lib/actions/reveal';
+
 	/*
 	 * "See PokeBell in action" — a merged walkthrough (Option B): each step is a
 	 * row pairing the real screenshot that proves it with the step copy, sides
@@ -51,7 +53,7 @@
 
 <section id="how-it-works" class="scroll-mt-20 bg-brand-charcoal py-20 sm:py-24">
 	<div class="mx-auto max-w-6xl px-5">
-		<div class="mx-auto max-w-2xl text-center">
+		<div class="reveal mx-auto max-w-2xl text-center" use:reveal>
 			<h2 class="text-3xl font-extrabold tracking-tight text-brand-cream sm:text-4xl">
 				See PokeBell in action
 			</h2>
@@ -63,9 +65,10 @@
 		<div class="mt-16 flex flex-col gap-16 lg:gap-20">
 			{#each steps as step, i (step.number)}
 				<div
-					class="flex flex-col items-center justify-center gap-8 lg:gap-12 {i % 2 === 1
+					class="reveal flex flex-col items-center justify-center gap-8 lg:gap-12 {i % 2 === 1
 						? 'lg:flex-row-reverse'
 						: 'lg:flex-row'}"
+					use:reveal
 				>
 					<!-- Phone -->
 					<figure class="w-full max-w-[13rem] shrink-0">

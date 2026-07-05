@@ -55,3 +55,22 @@ img.logo {
 	width: 128px;
 	height: 128px;
 }
+
+/*
+ * Scroll-reveal (see src/lib/actions/reveal.ts). The hidden state is gated on
+ * no-preference, so reduced-motion users never get hidden content. A <noscript>
+ * override in app.html unhides for no-JS users.
+ */
+@media (prefers-reduced-motion: no-preference) {
+	.reveal {
+		opacity: 0;
+		transform: translateY(16px);
+		transition:
+			opacity 0.6s ease,
+			transform 0.6s ease;
+	}
+	.reveal.is-visible {
+		opacity: 1;
+		transform: none;
+	}
+}

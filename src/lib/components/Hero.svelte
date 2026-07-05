@@ -19,7 +19,7 @@
 
 	<div class="relative mx-auto w-full max-w-6xl px-5 py-12 text-center">
 		<span
-			class="inline-flex items-center gap-2 rounded-full border border-brand-sand/60 bg-brand-sand-soft/50 px-4 py-1.5 text-sm font-medium text-brand-charcoal"
+			class="relative z-10 inline-flex items-center gap-2 rounded-full border border-brand-sand/60 bg-brand-sand-soft px-4 py-1.5 text-sm font-medium text-brand-charcoal"
 		>
 			<span class="h-2 w-2 animate-pulse rounded-full bg-brand-red"></span>
 			Live stock tracking across {SUPPORTED_SHOP_COUNT_DISPLAY}+ UK TCG shops

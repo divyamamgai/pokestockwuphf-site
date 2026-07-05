@@ -1,10 +1,11 @@
 <script lang="ts">
 	import subscribeForm from '$lib/assets/subscribe-form.html?raw';
+	import { reveal } from '$lib/actions/reveal';
 </script>
 
 <section id="waitlist" class="scroll-mt-20 pb-24 pt-4">
 	<div class="mx-auto max-w-6xl px-5">
-		<div class="overflow-hidden rounded-3xl bg-brand-red">
+		<div class="reveal overflow-hidden rounded-3xl bg-brand-red" use:reveal>
 			<div class="grid items-center gap-8 p-10 sm:p-14 lg:grid-cols-2">
 				<div class="text-center lg:text-left">
 					<h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">

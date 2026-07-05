@@ -48,34 +48,46 @@
 		// Shuffle once on the client for per-visit variety.
 		pool = [...pool].sort(() => Math.random() - 0.5);
 
-		const timers: ReturnType<typeof setTimeout>[] = [];
-		// Keep the slots evenly phased: with cycle = slots × STAGGER, each slot is
-		// offset by exactly one stagger step, so only ~SHOW/STAGGER cards (≈2) are
-		// visible at any moment instead of a cluster appearing together.
+		// Timing. cycle = slots × STAGGER keeps the slots evenly phased, so only
+		// ~SHOW/STAGGER cards (≈2) are visible at any moment. HIDE = CYCLE - SHOW.
 		const STAGGER = 1600;
 		const SHOW = 3600;
-		const HIDE = slots.length * STAGGER - SHOW;
+		const CYCLE = slots.length * STAGGER;
 
-		slots.forEach((_, i) => {
-			const run = () => {
-				slotState[i].visible = true;
-				timers.push(
-					setTimeout(() => {
-						slotState[i].visible = false;
-						timers.push(
-							setTimeout(() => {
-								slotState[i].idx = (slotState[i].idx + slots.length) % pool.length;
-								run();
-							}, HIDE)
-						);
-					}, SHOW)
-				);
-			};
-			// Stagger each slot by one full step so they never bunch up.
-			timers.push(setTimeout(run, i * STAGGER));
-		});
+		/*
+		 * Drive the animation from ABSOLUTE elapsed time via requestAnimationFrame
+		 * rather than chained setTimeouts. Why: background tabs throttle/coalesce
+		 * timers, which collapses the per-slot phase offsets and makes every card
+		 * appear at once on return. rAF pauses while the tab is hidden (no backlog),
+		 * and deriving each slot's state from the real clock means the first frame
+		 * after refocus snaps back to the correct staggered state — self-correcting.
+		 */
+		const start = performance.now();
+		let raf = 0;
 
-		return () => timers.forEach(clearTimeout);
+		const frame = (now: number) => {
+			const t = now - start;
+			for (let i = 0; i < slots.length; i++) {
+				const offset = t - i * STAGGER;
+				// Position within this slot's cycle, always in [0, CYCLE).
+				const local = ((offset % CYCLE) + CYCLE) % CYCLE;
+				const visible = local < SHOW;
+				// Product advances once per completed cycle. Derived from absolute
+				// time, so after backgrounding it resumes at the correct product
+				// instead of drifting. idx only changes at the cycle boundary — which
+				// is exactly when the card flips hidden→visible — so the text swap is
+				// never seen mid-fade.
+				const cycles = Math.max(0, Math.floor(offset / CYCLE));
+				const idx = (i + cycles * slots.length) % pool.length;
+				// Assign only on change to avoid per-frame reactivity churn.
+				if (slotState[i].visible !== visible) slotState[i].visible = visible;
+				if (slotState[i].idx !== idx) slotState[i].idx = idx;
+			}
+			raf = requestAnimationFrame(frame);
+		};
+		raf = requestAnimationFrame(frame);
+
+		return () => cancelAnimationFrame(raf);
 	});
 </script>
 
