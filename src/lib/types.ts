@@ -27,6 +27,7 @@ export interface BlogPost {
 	readonly excerpt: string;
 	readonly author?: string;
 	readonly tags?: readonly string[];
+	readonly pinned?: boolean; // pinned posts sort to the top of the index
 	readonly coverImage?: string; // optional cover/hero image URL or /static path
 	readonly coverAlt?: string; // alt text for the cover image
 	readonly gallery?: readonly GalleryImage[]; // optional image carousel shown after the body

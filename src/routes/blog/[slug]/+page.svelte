@@ -156,7 +156,7 @@
 		flex-shrink: 0;
 		border-radius: 0.6rem;
 		border: 1px solid var(--color-brand-cream-dark);
-		background: var(--color-brand-cream);
+		background: #ffffff;
 		object-fit: contain;
 		padding: 0.4rem;
 	}

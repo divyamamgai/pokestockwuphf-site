@@ -89,6 +89,7 @@ export const posts: BlogPost[] = [
 			'The 30th Celebration expansion lands worldwide on 16 September 2026 — an all-foil set with 30 Pikachu cards, a brand-new Futuristic rare rarity, and 30 returning classics. Here is the full lineup and release schedule.',
 		author: 'PokeBell',
 		tags: ['Release watch'],
+		pinned: true,
 		coverImage:
 			'https://mcdn.pokemon.com/image/upload/c_limit,w_1439/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/30th/product-showcase/30th-product-showcase-169-en.png',
 		coverAlt: 'Pokémon TCG: 30th Celebration product showcase key art',
@@ -213,8 +214,11 @@ export const posts: BlogPost[] = [
 	}
 ];
 
-/** Posts sorted newest-first (by date). */
-export const sortedPosts: BlogPost[] = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+/** Posts sorted with pinned first, then newest-first (by date). */
+export const sortedPosts: BlogPost[] = [...posts].sort((a, b) => {
+	if (!!a.pinned !== !!b.pinned) return a.pinned ? -1 : 1;
+	return b.date.localeCompare(a.date);
+});
 
 /** Look up a single post by slug. */
 export function getPost(slug: string): BlogPost | undefined {

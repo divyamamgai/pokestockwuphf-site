@@ -53,7 +53,7 @@ const e="https://mcdn.pokemon.com/image/upload/c_fit,w_2000,h_1125/f_auto/q_auto
 				These are invitation-only listings, so availability can be limited. See the current
 				lineup on our <a href="/invitations">invitation products</a> page.
 			</p>
-		`},{slug:"pokemon-tcg-30th-celebration-product-showcase",title:"Pokémon TCG: 30th Celebration — the full product lineup",date:"2026-07-05",excerpt:"The 30th Celebration expansion lands worldwide on 16 September 2026 — an all-foil set with 30 Pikachu cards, a brand-new Futuristic rare rarity, and 30 returning classics. Here is the full lineup and release schedule.",author:"PokeBell",tags:["Release watch"],coverImage:"https://mcdn.pokemon.com/image/upload/c_limit,w_1439/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/30th/product-showcase/30th-product-showcase-169-en.png",coverAlt:"Pokémon TCG: 30th Celebration product showcase key art",content:`
+		`},{slug:"pokemon-tcg-30th-celebration-product-showcase",title:"Pokémon TCG: 30th Celebration — the full product lineup",date:"2026-07-05",excerpt:"The 30th Celebration expansion lands worldwide on 16 September 2026 — an all-foil set with 30 Pikachu cards, a brand-new Futuristic rare rarity, and 30 returning classics. Here is the full lineup and release schedule.",author:"PokeBell",tags:["Release watch"],pinned:!0,coverImage:"https://mcdn.pokemon.com/image/upload/c_limit,w_1439/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/30th/product-showcase/30th-product-showcase-169-en.png",coverAlt:"Pokémon TCG: 30th Celebration product showcase key art",content:`
 			<p>
 				The Pokémon Company has revealed the full lineup for <strong>Pokémon TCG:
 				30th Celebration</strong> — a commemorative special expansion launching
@@ -144,4 +144,4 @@ const e="https://mcdn.pokemon.com/image/upload/c_fit,w_2000,h_1125/f_auto/q_auto
 				This first post is a placeholder so the section has something to show — real
 				coverage is on the way.
 			</p>
-		`}],r=[...n].sort((o,t)=>t.date.localeCompare(o.date));function a(o){return n.find(t=>t.slug===o)}function l(o){const t=new Date(o);return Number.isNaN(t.getTime())?o:t.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"})}export{l as f,a as g,n as p,r as s};
+		`}],r=[...n].sort((o,t)=>!!o.pinned!=!!t.pinned?o.pinned?-1:1:t.date.localeCompare(o.date));function a(o){return n.find(t=>t.slug===o)}function l(o){const t=new Date(o);return Number.isNaN(t.getTime())?o:t.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"})}export{l as f,a as g,n as p,r as s};
