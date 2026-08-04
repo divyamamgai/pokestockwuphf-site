@@ -1,0 +1,202 @@
+<script lang="ts">
+	import { layoutState } from '$lib/state.svelte';
+	import Nav from '$lib/components/Nav.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+
+	layoutState.title = 'PokeBell — Privacy Policy';
+</script>
+
+<Nav />
+
+<main class="mx-auto max-w-3xl px-5 py-16 sm:py-20">
+	<h1 class="font-display text-3xl font-bold text-brand-charcoal sm:text-4xl mb-2">
+		Privacy Policy
+	</h1>
+	<p class="font-body text-sm text-brand-charcoal-soft">Last updated: August 2026</p>
+
+	<div class="mt-10 space-y-8">
+		<section>
+			<h2 class="font-display text-xl font-bold text-brand-charcoal sm:text-2xl mb-4">
+				Introduction
+			</h2>
+			<p class="font-body text-brand-charcoal-soft leading-relaxed">
+				PokeBell ("we", "our", "us") operates the PokeBell mobile application. This Privacy
+				Policy explains what information we collect, how we use it, and your choices regarding
+				your data. We are committed to protecting your privacy and collecting only the minimum
+				data necessary to provide our service.
+			</p>
+		</section>
+
+		<section>
+			<h2 class="font-display text-xl font-bold text-brand-charcoal sm:text-2xl mb-4">
+				What Data We Collect
+			</h2>
+			<p class="font-body text-brand-charcoal-soft leading-relaxed mb-4">
+				We collect minimal data to deliver our notification service. We do not collect your
+				name, email address, physical address, or any other personally identifiable information.
+			</p>
+			<ul class="font-body text-brand-charcoal-soft leading-relaxed list-disc pl-6 space-y-2">
+				<li>
+					<strong>Anonymous Identifier</strong> — a randomly generated identifier created when
+					you first open the app, not linked to any personal information.
+				</li>
+				<li>
+					<strong>Push Notification Token</strong> — a device-specific token used to deliver push
+					notifications to your device.
+				</li>
+				<li>
+					<strong>Subscription and Purchase Data</strong> — managed by RevenueCat on our behalf,
+					including your subscription status, purchase history, and billing period. Payment
+					details are handled entirely by the App Store or Google Play Store.
+				</li>
+				<li>
+					<strong>Basic Device Information</strong> — platform (iOS/Android) and app version, used
+					to ensure notifications are delivered correctly.
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2 class="font-display text-xl font-bold text-brand-charcoal sm:text-2xl mb-4">
+				How We Use Your Data
+			</h2>
+			<ul class="font-body text-brand-charcoal-soft leading-relaxed list-disc pl-6 space-y-2">
+				<li>Delivering push notifications about product stock availability.</li>
+				<li>Managing your subscription tier and ensuring access to the correct features.</li>
+				<li>Improving the reliability and performance of our notification service.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2 class="font-display text-xl font-bold text-brand-charcoal sm:text-2xl mb-4">
+				Third-Party Services
+			</h2>
+			<p class="font-body text-brand-charcoal-soft leading-relaxed mb-4">
+				We use the following third-party services to operate PokeBell:
+			</p>
+			<ul class="font-body text-brand-charcoal-soft leading-relaxed list-disc pl-6 space-y-2">
+				<li>
+					<strong>Firebase (Google)</strong> — provides anonymous authentication and push
+					notification delivery.
+					<a
+						href="https://firebase.google.com/support/privacy"
+						class="text-brand-red hover:text-brand-red-dark underline"
+						target="_blank"
+						rel="noopener noreferrer">Firebase Privacy Policy</a
+					>.
+				</li>
+				<li>
+					<strong>RevenueCat</strong> — manages subscription status.
+					<a
+						href="https://www.revenuecat.com/privacy"
+						class="text-brand-red hover:text-brand-red-dark underline"
+						target="_blank"
+						rel="noopener noreferrer">RevenueCat Privacy Policy</a
+					>.
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2 class="font-display text-xl font-bold text-brand-charcoal sm:text-2xl mb-4">
+				Data Retention
+			</h2>
+			<ul class="font-body text-brand-charcoal-soft leading-relaxed list-disc pl-6 space-y-2">
+				<li>
+					Your anonymous identifier and push notification token are retained for as long as your
+					account is active and you have the app installed.
+				</li>
+				<li>
+					Subscription data is retained in accordance with
+					<a
+						href="https://www.revenuecat.com/privacy"
+						class="text-brand-red hover:text-brand-red-dark underline"
+						target="_blank"
+						rel="noopener noreferrer">RevenueCat's data retention policy</a
+					>.
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2 class="font-display text-xl font-bold text-brand-charcoal sm:text-2xl mb-4">
+				Data Deletion
+			</h2>
+			<p class="font-body text-brand-charcoal-soft leading-relaxed">
+				You can request deletion of your data at any time by contacting us at
+				<a
+					href="mailto:support@pokebell.co.uk"
+					class="text-brand-red hover:text-brand-red-dark underline">support@pokebell.co.uk</a
+				>. Uninstalling the app will automatically remove your push notification token, stopping all
+				notifications. Upon receiving a deletion request, we will remove your anonymous identifier
+				and any associated data from our systems.
+			</p>
+		</section>
+
+		<section>
+			<h2 class="font-display text-xl font-bold text-brand-charcoal sm:text-2xl mb-4">
+				Children's Privacy
+			</h2>
+			<p class="font-body text-brand-charcoal-soft leading-relaxed">
+				PokeBell is not directed at children under the age of 13. We do not knowingly collect
+				data from children under 13. If you believe a child under 13 has provided us with data,
+				please contact us at
+				<a
+					href="mailto:support@pokebell.co.uk"
+					class="text-brand-red hover:text-brand-red-dark underline">support@pokebell.co.uk</a
+				>
+				and we will promptly delete it.
+			</p>
+		</section>
+
+		<section>
+			<h2 class="font-display text-xl font-bold text-brand-charcoal sm:text-2xl mb-4">
+				International Transfers & Legal Basis
+			</h2>
+			<ul class="font-body text-brand-charcoal-soft leading-relaxed list-disc pl-6 space-y-2">
+				<li>
+					Your data may be processed on servers located outside your country of residence,
+					including in the United States.
+				</li>
+				<li>
+					We process your data on the basis of legitimate interests, specifically to deliver
+					the service you requested.
+				</li>
+				<li>
+					PokeBell is operated from the United Kingdom and can be contacted at
+					<a
+						href="mailto:support@pokebell.co.uk"
+						class="text-brand-red hover:text-brand-red-dark underline"
+						>support@pokebell.co.uk</a
+					>.
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2 class="font-display text-xl font-bold text-brand-charcoal sm:text-2xl mb-4">
+				Changes to This Policy
+			</h2>
+			<p class="font-body text-brand-charcoal-soft leading-relaxed">
+				We may update this Privacy Policy from time to time. Any changes will be reflected on
+				this page with an updated "Last updated" date. We encourage you to review this page
+				periodically.
+			</p>
+		</section>
+
+		<section>
+			<h2 class="font-display text-xl font-bold text-brand-charcoal sm:text-2xl mb-4">
+				Contact Us
+			</h2>
+			<p class="font-body text-brand-charcoal-soft leading-relaxed">
+				If you have any questions about this Privacy Policy or your data, please contact us at
+				<a
+					href="mailto:support@pokebell.co.uk"
+					class="text-brand-red hover:text-brand-red-dark underline">support@pokebell.co.uk</a
+				>.
+			</p>
+		</section>
+	</div>
+</main>
+
+<Footer />

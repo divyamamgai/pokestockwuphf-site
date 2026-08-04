@@ -38,4 +38,20 @@
 
 		<p class="text-sm text-brand-charcoal-soft">© {year} PokeBell</p>
 	</div>
+
+	<div class="border-t border-brand-cream-dark">
+		<nav
+			class="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-2 px-5 py-4"
+		>
+			<a href="/privacy" class="text-xs text-brand-charcoal-soft/70 transition-colors hover:text-brand-red">
+				Privacy Policy
+			</a>
+			<a href="/terms" class="text-xs text-brand-charcoal-soft/70 transition-colors hover:text-brand-red">
+				Terms of Use
+			</a>
+			<a href="/support" class="text-xs text-brand-charcoal-soft/70 transition-colors hover:text-brand-red">
+				Support
+			</a>
+		</nav>
+	</div>
 </footer>

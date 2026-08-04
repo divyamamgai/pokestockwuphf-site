@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>PokeBell — Page Not Found</title>
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+	<style>
+		*, *::before, *::after {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: #fdf8f3;
+			color: #343234;
+			font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+			-webkit-font-smoothing: antialiased;
+			text-rendering: optimizeLegibility;
+			padding: 1.5rem;
+		}
+
+		.container {
+			text-align: center;
+			max-width: 28rem;
+		}
+
+		.logo {
+			font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+			font-weight: 800;
+			font-size: 1.5rem;
+			letter-spacing: -0.025em;
+			color: #343234;
+			text-decoration: none;
+			display: inline-flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 0.75rem;
+			margin-bottom: 2.5rem;
+		}
+
+		.logo svg {
+			width: 56px;
+			height: 56px;
+		}
+
+		.error-code {
+			font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+			font-weight: 700;
+			font-size: 5rem;
+			line-height: 1;
+			color: #e6aa68;
+			margin-bottom: 1rem;
+		}
+
+		h1 {
+			font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+			font-weight: 800;
+			font-size: 1.875rem;
+			color: #343234;
+			margin-bottom: 0.75rem;
+		}
+
+		p {
+			font-size: 1rem;
+			line-height: 1.6;
+			color: #4a474a;
+			margin-bottom: 2rem;
+		}
+
+		.cta {
+			display: inline-block;
+			background-color: #ca3c25;
+			color: #ffffff;
+			font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+			font-weight: 600;
+			font-size: 0.875rem;
+			text-decoration: none;
+			padding: 0.75rem 1.75rem;
+			border-radius: 9999px;
+			transition: background-color 0.2s ease;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+		}
+
+		.cta:hover {
+			background-color: #a72f1c;
+		}
+
+		.cta:focus-visible {
+			outline: 2px solid #ca3c25;
+			outline-offset: 2px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<a href="/" class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 375 375"><circle cx="187.5" cy="187.5" r="180" fill="#ffffff"/><path d="M131.332031 28.558594c17.242188-5.878906 36.960938-9.738282 56.257813-9.738282 19.300781 0 37.871094 3.304688 54.984375 9.1875.363281.183594.726562.183594 1.09375.367188 64.265625 23.527344 111.601562 85.65625 112.511719 152.636719H18.820312c.910157-67.347657 47.515626-129.476563 112.511719-152.453125" fill="#ca3c25"/><path d="M243.664062 346.433594c-17.242187 5.882812-36.960937 9.742187-56.257812 9.742187-19.300781 0-37.871094-3.308593-54.984375-9.191406-.363281-.183594-.726563-.183594-1.09375-.367187C67.0625 323.089844 19.726562 260.964844 18.816406 193.980469h337.363282c-.914063 67.351562-47.519532 129.476562-112.515626 152.453125" fill="#e6aa68"/><circle cx="187.5" cy="187.5" r="101.25" fill="#ffffff"/><circle cx="187.5" cy="187.5" r="85.5" fill="#343234"/><path d="M219.140625 171.492188c0 34.925781 15.875 31.75 15.875 47.625 0 0 0 6.351562-6.347656 6.351562h-82.550781c-6.351563 0-6.351563-6.351562-6.351563-6.351562 0-15.875 15.875-12.699219 15.875-47.625 0-17.53125 14.214844-31.75 31.75-31.75s31.75 14.21875 31.75 31.75" fill="#fcffff"/><path d="M196.917969 139.742188c0 .625-.0625 1.246093-.183594 1.859374-.121094.613282-.304687 1.207032-.542969 1.785157-.238281.578125-.53125 1.128906-.878906 1.648437-.347656.519532-.742188 1-1.1875 1.441406-.441406.445313-.921875.839844-1.441406 1.1875-.519532.347657-1.070313.640626-1.648438.878907s-1.171875.421875-1.785156.542969c-.613281.121093-1.234375.183593-1.859375.183593s-1.242187-.0625-1.855469-.183593c-.613281-.121094-1.210937-.304688-1.789062-.542969s-1.125-.53125-1.644532-.878907c-.523437-.347656-1.003906-.742187-1.445312-1.1875-.441406-.441406-.835938-.921874-1.183594-1.441406-.347656-.519531-.640625-1.070312-.882812-1.648437-.238282-.578125-.417969-1.171875-.539063-1.785157-.125-.613281-.183593-1.234374-.183593-1.859374s.058593-1.242188.183593-1.855469c.121094-.613281.300781-1.210938.539063-1.789063.242187-.578125.535156-1.125.882812-1.644531.347656-.523437.742188-1.003906 1.183594-1.445313.441406-.441406.921875-.835937 1.445312-1.183593.519532-.347657 1.066407-.640625 1.644532-.882813.578125-.238281 1.175781-.417968 1.789062-.539062.613282-.125 1.230469-.183594 1.855469-.183594s1.246094.058594 1.859375.183594c.613281.121094 1.207031.300781 1.785156.539062.578125.242188 1.128906.535156 1.648438.882813.519531.347656 1 .742187 1.441406 1.183593.445312.441407.839844.921876 1.1875 1.445313.347656.519531.640625 1.066406.878906 1.644531.238282.578125.421875 1.175782.542969 1.789063s.183594 1.230469.183594 1.855469" fill="#fcffff"/><path d="M187.390625 244.519531c7.015625 0 12.699219-5.6875 12.699219-12.703125h-25.398438c0 7.015625 5.6875 12.703125 12.699219 12.703125" fill="#fcffff"/></svg>PokeBell</a>
+		<div class="error-code" aria-hidden="true">404</div>
+		<h1>Page not found</h1>
+		<p>The page you're looking for doesn't exist or has been moved.</p>
+		<a href="/" class="cta">Go to Homepage</a>
+	</div>
+</body>
+</html>

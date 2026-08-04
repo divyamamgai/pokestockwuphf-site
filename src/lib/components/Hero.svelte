@@ -29,7 +29,7 @@
 			<!-- Sonar-style "echo" rings that radiate out while the bell rings -->
 			<span class="bell-echo" aria-hidden="true"></span>
 			<span class="bell-echo bell-echo--2" aria-hidden="true"></span>
-			<BellLogo class="relative h-24 w-24 sm:h-28 sm:w-28" />
+			<BellLogo class="bell-bloom relative h-24 w-24 sm:h-28 sm:w-28" />
 		</div>
 
 		<h1
@@ -116,6 +116,39 @@
 	@media (prefers-reduced-motion: reduce) {
 		.bell-echo {
 			display: none;
+		}
+	}
+
+	/*
+	 * Bloom / glow effect: layered drop-shadows that follow the circular logo
+	 * shape. A tight warm layer close to the edge plus a larger diffuse outer
+	 * bloom give the "soft neon" radiance. A subtle pulse animates the intensity.
+	 */
+	:global(.bell-bloom) {
+		filter: drop-shadow(0 0 6px rgba(230, 170, 104, 0.6))
+			drop-shadow(0 0 14px rgba(230, 170, 104, 0.35))
+			drop-shadow(0 0 28px rgba(202, 60, 37, 0.2));
+		animation: bloom-pulse 3s ease-in-out infinite;
+	}
+
+	@keyframes bloom-pulse {
+		0%,
+		100% {
+			filter: drop-shadow(0 0 6px rgba(230, 170, 104, 0.6))
+				drop-shadow(0 0 14px rgba(230, 170, 104, 0.35))
+				drop-shadow(0 0 28px rgba(202, 60, 37, 0.2));
+		}
+		50% {
+			filter: drop-shadow(0 0 10px rgba(230, 170, 104, 0.8))
+				drop-shadow(0 0 20px rgba(230, 170, 104, 0.5))
+				drop-shadow(0 0 36px rgba(202, 60, 37, 0.3));
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		:global(.bell-bloom) {
+			animation: none;
+			/* Keep the static glow, just disable the pulse */
 		}
 	}
 </style>
