@@ -3,7 +3,7 @@
 	import Nav from '$lib/components/Nav.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import Features from '$lib/components/Features.svelte';
-	import HowItWorks from '$lib/components/HowItWorks.svelte';
+	import AppShowcase from '$lib/components/AppShowcase.svelte';
 	import Coverage from '$lib/components/Coverage.svelte';
 	import Waitlist from '$lib/components/Waitlist.svelte';
 	import Footer from '$lib/components/Footer.svelte';
@@ -17,7 +17,7 @@
 <main>
 	<Hero />
 	<Features />
-	<HowItWorks />
+	<AppShowcase />
 	<Coverage />
 	<Waitlist />
 </main>
