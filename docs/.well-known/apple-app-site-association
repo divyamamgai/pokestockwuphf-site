@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["452PD4597B.com.divyamamgai.pokestockwuphf"],
+        "components": [
+          {
+            "/": "/discord-linked*",
+            "comment": "Discord OAuth account-linking return deep link"
+          }
+        ]
+      }
+    ]
+  }
+}

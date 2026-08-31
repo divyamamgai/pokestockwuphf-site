@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.divyamamgai.pokestockwuphf",
+      "sha256_cert_fingerprints": [
+        "0F:21:FD:17:A9:64:A9:1B:99:D2:BD:C6:22:B6:86:1F:F7:89:25:FD:5E:71:34:A5:11:52:02:4A:D1:D6:3A:AD"
+      ]
+    }
+  }
+]
