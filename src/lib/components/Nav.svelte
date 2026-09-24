@@ -34,7 +34,7 @@
 			href="/#waitlist"
 			class="rounded-full bg-brand-red px-5 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-red-dark"
 		>
-			Join the waitlist
+			Android waitlist
 		</a>
 	</nav>
 </header>

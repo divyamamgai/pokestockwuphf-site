@@ -32,7 +32,7 @@
 				Blog
 			</a>
 			<a href="/#waitlist" class="text-brand-charcoal-soft transition-colors hover:text-brand-red">
-				Join the waitlist
+				Android waitlist
 			</a>
 		</nav>
 

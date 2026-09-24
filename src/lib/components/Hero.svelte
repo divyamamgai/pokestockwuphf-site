@@ -46,10 +46,12 @@
 
 		<div class="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
 			<a
-				href="#waitlist"
+				href="https://apps.apple.com/gb/app/pokebell/id6792279766"
+				target="_blank"
+				rel="noopener noreferrer"
 				class="w-full rounded-full bg-brand-red px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-brand-red/20 transition-colors hover:bg-brand-red-dark sm:w-auto"
 			>
-				Join the waitlist
+				Download on iOS
 			</a>
 			<a
 				href="#how-it-works"
@@ -63,10 +65,17 @@
 			Faster than any other alert · Delivered in seconds · No spam
 		</p>
 
+		<p class="mt-3 text-sm text-brand-charcoal-soft">
+			On Android? <a
+				href="#waitlist"
+				class="font-semibold text-brand-red underline-offset-2 hover:underline">Join the waitlist</a
+			> — we'll let you know the moment it lands.
+		</p>
+
 		<div class="mx-auto mt-5 h-px w-16 bg-brand-charcoal/15" aria-hidden="true"></div>
 
 		<div class="mt-5 flex flex-col items-center gap-3">
-			<p class="text-sm font-semibold text-brand-charcoal">Launching on iOS &amp; Android</p>
+			<p class="text-sm font-semibold text-brand-charcoal">Now on iOS · Android coming soon</p>
 			<StoreBadges />
 		</div>
 	</div>

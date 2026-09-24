@@ -6,15 +6,15 @@
  * separate static build, so update this number when coverage changes to keep
  * the landing page accurate.
  *
- * Last synced: 2026-07-04.
+ * Last synced: 2026-09-24.
  */
-export const SUPPORTED_SHOP_COUNT = 198;
+export const SUPPORTED_SHOP_COUNT = 209;
 
 /**
  * Rounds a value DOWN to the nearest multiple of `step`.
  *
  * We round down (not to nearest) so the public figure is always something we
- * genuinely meet or exceed — e.g. 198 → "190+", never an overstated "200+".
+ * genuinely meet or exceed — e.g. 209 → "200+", never an overstated figure.
  */
 export function roundDownTo(value: number, step = 10): number {
 	return Math.floor(value / step) * step;

@@ -9,14 +9,14 @@
 			<div class="grid items-center gap-8 p-10 sm:p-14 lg:grid-cols-2">
 				<div class="text-center lg:text-left">
 					<h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-						Be first in line
+						Android coming soon
 					</h2>
 					<p class="mt-4 max-w-md text-lg text-white/85">
-						PokeBell is launching soon. Join the waitlist and we will let you know the moment
-						the app is ready — plus you will be among the first to get access.
+						PokeBell is live on iOS today — grab it on the App Store. The Android app is on
+						the way; join the waitlist and we will email you the moment it lands.
 					</p>
 					<p class="mt-4 text-sm text-white/70">
-						No spam, ever. Just one email when we go live.
+						No spam, ever. Just one email when Android goes live.
 					</p>
 				</div>
 
