@@ -1,17 +1,19 @@
 <script lang="ts">
-	import { layoutState } from '$lib/state.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-
-	layoutState.title = 'PokeBell — Terms of Use';
 </script>
+
+<Seo
+	title="PokeBell — Terms of Use"
+	description="The Terms of Use governing the PokeBell app, including the service description, subscription terms, user conduct and disclaimers."
+	canonicalPath="/terms"
+/>
 
 <Nav />
 
 <main class="mx-auto max-w-3xl px-5 py-16 sm:py-20">
-	<h1 class="font-display text-3xl font-bold text-brand-charcoal sm:text-4xl mb-2">
-		Terms of Use
-	</h1>
+	<h1 class="font-display text-3xl font-bold text-brand-charcoal sm:text-4xl mb-2">Terms of Use</h1>
 	<p class="font-body text-sm text-brand-charcoal-soft">Last updated: August 2026</p>
 
 	<div class="mt-10 space-y-8">
@@ -20,9 +22,8 @@
 				Acceptance of Terms
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
-				By downloading, installing, or using the PokeBell application ("the App"), you agree to
-				be bound by these Terms of Use. If you do not agree to these terms, please do not use
-				the App.
+				By downloading, installing, or using the PokeBell application ("the App"), you agree to be
+				bound by these Terms of Use. If you do not agree to these terms, please do not use the App.
 			</p>
 		</section>
 
@@ -31,9 +32,9 @@
 				Service Description
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
-				PokeBell is a stock monitoring service that sends push notifications when products
-				become available at supported retailers. The App monitors product availability and
-				sends notifications when items come in stock.
+				PokeBell is a stock monitoring service that sends push notifications when products become
+				available at supported retailers. The App monitors product availability and sends
+				notifications when items come in stock.
 			</p>
 		</section>
 
@@ -49,26 +50,25 @@
 					<strong>Price:</strong> £4.99 per month.
 				</li>
 				<li>
-					<strong>Free Trial:</strong> New subscribers receive a 7-day free trial. If you do not
-					cancel before the trial ends, your subscription will automatically convert to a paid
-					monthly subscription.
+					<strong>Free Trial:</strong> New subscribers receive a 7-day free trial. If you do not cancel
+					before the trial ends, your subscription will automatically convert to a paid monthly subscription.
 				</li>
 				<li>
-					<strong>Auto-Renewal:</strong> Subscriptions automatically renew each month unless
-					cancelled at least 24 hours before the end of the current billing period.
+					<strong>Auto-Renewal:</strong> Subscriptions automatically renew each month unless cancelled
+					at least 24 hours before the end of the current billing period.
 				</li>
 				<li>
-					<strong>Payment:</strong> Payment is charged to your Apple App Store or Google Play
-					Store account at confirmation of purchase.
+					<strong>Payment:</strong> Payment is charged to your Apple App Store or Google Play Store account
+					at confirmation of purchase.
 				</li>
 				<li>
-					<strong>Cancellation:</strong> You can cancel your subscription at any time through
-					your device's subscription settings. Access to Standard features continues until the
-					end of the current billing period.
+					<strong>Cancellation:</strong> You can cancel your subscription at any time through your device's
+					subscription settings. Access to Standard features continues until the end of the current billing
+					period.
 				</li>
 				<li>
-					<strong>Trial Forfeiture:</strong> Any unused portion of the free trial is forfeited
-					once you purchase a subscription.
+					<strong>Trial Forfeiture:</strong> Any unused portion of the free trial is forfeited once you
+					purchase a subscription.
 				</li>
 			</ul>
 		</section>
@@ -83,15 +83,15 @@
 			<ul class="font-body text-brand-charcoal-soft leading-relaxed list-disc pl-6 space-y-2">
 				<li>Use the service for any unlawful purpose or in violation of any applicable laws.</li>
 				<li>
-					Attempt to reverse engineer, decompile, disassemble, or otherwise derive the source
-					code of the App.
+					Attempt to reverse engineer, decompile, disassemble, or otherwise derive the source code
+					of the App.
 				</li>
 				<li>
 					Interfere with or disrupt the service, servers, or networks connected to the service.
 				</li>
 				<li>
-					Redistribute, resell, or commercially exploit notifications or data obtained through
-					the App.
+					Redistribute, resell, or commercially exploit notifications or data obtained through the
+					App.
 				</li>
 				<li>Use automated systems or bots to interact with the App.</li>
 			</ul>
@@ -102,10 +102,10 @@
 				Intellectual Property
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
-				The PokeBell name, logo, and service are owned by PokeBell. All rights not expressly
-				granted are reserved. Pokémon is a trademark of The Pokémon Company. PokeBell is not
-				affiliated with, endorsed by, or sponsored by The Pokémon Company, Nintendo, or any
-				retailer whose products are monitored.
+				The PokeBell name, logo, and service are owned by PokeBell. All rights not expressly granted
+				are reserved. Pokémon is a trademark of The Pokémon Company. PokeBell is not affiliated
+				with, endorsed by, or sponsored by The Pokémon Company, Nintendo, or any retailer whose
+				products are monitored.
 			</p>
 		</section>
 
@@ -115,16 +115,15 @@
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
 				Notifications provided by PokeBell are informational only. We do not guarantee that any
-				product will be available for purchase, that notifications will be delivered instantly,
-				or that you will successfully complete a purchase. Stock availability is determined by
+				product will be available for purchase, that notifications will be delivered instantly, or
+				that you will successfully complete a purchase. Stock availability is determined by
 				third-party retailers and is beyond our control.
 			</p>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed mt-4">
-				PokeBell does not endorse, verify, or take responsibility for any third-party retailer
-				or website linked to from notifications. Any transaction you make with a retailer is
-				solely between you and that retailer. We are not liable for any retailer's products,
-				services, delivery, pricing, security, or content. You access third-party websites at
-				your own risk.
+				PokeBell does not endorse, verify, or take responsibility for any third-party retailer or
+				website linked to from notifications. Any transaction you make with a retailer is solely
+				between you and that retailer. We are not liable for any retailer's products, services,
+				delivery, pricing, security, or content. You access third-party websites at your own risk.
 			</p>
 		</section>
 
@@ -133,11 +132,10 @@
 				Limitation of Liability
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
-				PokeBell is provided on an "as is" and "as available" basis without warranties of any
-				kind, whether express or implied. To the fullest extent permitted by law, PokeBell
-				shall not be liable for any indirect, incidental, special, consequential, or punitive
-				damages, including but not limited to loss of profits, data, or goodwill, arising from
-				your use of the service.
+				PokeBell is provided on an "as is" and "as available" basis without warranties of any kind,
+				whether express or implied. To the fullest extent permitted by law, PokeBell shall not be
+				liable for any indirect, incidental, special, consequential, or punitive damages, including
+				but not limited to loss of profits, data, or goodwill, arising from your use of the service.
 			</p>
 		</section>
 
@@ -146,9 +144,9 @@
 				Termination
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
-				We reserve the right to suspend or terminate your access to PokeBell at any time,
-				without prior notice, if we reasonably believe you have violated these Terms of Use.
-				Upon termination, your right to use the App ceases immediately.
+				We reserve the right to suspend or terminate your access to PokeBell at any time, without
+				prior notice, if we reasonably believe you have violated these Terms of Use. Upon
+				termination, your right to use the App ceases immediately.
 			</p>
 		</section>
 
@@ -157,9 +155,9 @@
 				Governing Law
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
-				These Terms of Use are governed by and construed in accordance with the laws of England
-				and Wales. Any disputes arising from these terms or your use of the service shall be
-				subject to the exclusive jurisdiction of the courts of England and Wales.
+				These Terms of Use are governed by and construed in accordance with the laws of England and
+				Wales. Any disputes arising from these terms or your use of the service shall be subject to
+				the exclusive jurisdiction of the courts of England and Wales.
 			</p>
 		</section>
 
@@ -168,8 +166,8 @@
 				Severability
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
-				If any provision of these Terms is found to be unenforceable, the remaining provisions
-				will continue in full force and effect.
+				If any provision of these Terms is found to be unenforceable, the remaining provisions will
+				continue in full force and effect.
 			</p>
 		</section>
 
@@ -178,9 +176,9 @@
 				Changes to These Terms
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
-				We may update these Terms of Use from time to time. Any changes will be reflected on
-				this page with an updated "Last updated" date. Continued use of the App after changes
-				constitutes acceptance of the revised terms.
+				We may update these Terms of Use from time to time. Any changes will be reflected on this
+				page with an updated "Last updated" date. Continued use of the App after changes constitutes
+				acceptance of the revised terms.
 			</p>
 		</section>
 

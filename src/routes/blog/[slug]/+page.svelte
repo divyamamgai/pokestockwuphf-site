@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { layoutState } from '$lib/state.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import { formatDate } from '$lib/data/blog/posts';
+	import { SITE_URL, absUrl } from '$lib/config';
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Carousel from '$lib/components/Carousel.svelte';
@@ -8,10 +9,40 @@
 	let { data } = $props();
 	const post = $derived(data.post);
 
-	$effect(() => {
-		layoutState.title = `PokeBell — ${post.title}`;
-	});
+	// Per-page SEO derived from the post. The <Seo> component renders these into
+	// its own <svelte:head>, so they are captured in the prerendered HTML and
+	// stay in sync when navigating between posts.
+	const canonicalPath = $derived(`/blog/${post.slug}`);
+	const jsonLd = $derived<Record<string, unknown>[]>([
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BlogPosting',
+			headline: post.title,
+			description: post.excerpt,
+			datePublished: post.date,
+			author: { '@type': 'Organization', name: post.author ?? 'PokeBell' },
+			...(post.coverImage ? { image: absUrl(post.coverImage) } : {}),
+			mainEntityOfPage: absUrl(canonicalPath)
+		},
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{ '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+				{ '@type': 'ListItem', position: 2, name: 'Blog', item: absUrl('/blog') },
+				{ '@type': 'ListItem', position: 3, name: post.title, item: absUrl(canonicalPath) }
+			]
+		}
+	]);
 </script>
+
+<Seo
+	title={`PokeBell — ${post.title}`}
+	description={post.excerpt}
+	{canonicalPath}
+	ogImage={post.coverImage || '/og-image.png'}
+	{jsonLd}
+/>
 
 <Nav />
 

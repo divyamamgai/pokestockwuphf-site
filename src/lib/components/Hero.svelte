@@ -2,12 +2,10 @@
 	import BellLogo from './BellLogo.svelte';
 	import StoreBadges from './StoreBadges.svelte';
 	import HeroNotifications from './HeroNotifications.svelte';
-	import { SUPPORTED_SHOP_COUNT_DISPLAY } from '$lib/config';
+	import { SUPPORTED_SHOP_COUNT_DISPLAY, APP_STORE_URL } from '$lib/config';
 </script>
 
-<section
-	class="relative flex min-h-[calc(100svh-var(--nav-height))] items-center overflow-hidden"
->
+<section class="relative flex min-h-[calc(100svh-var(--nav-height))] items-center overflow-hidden">
 	<!-- Soft warm glow behind the hero -->
 	<div
 		class="pointer-events-none absolute inset-x-0 -top-32 mx-auto h-96 max-w-3xl rounded-full bg-brand-sand/30 blur-3xl"
@@ -39,14 +37,13 @@
 		</h1>
 
 		<p class="mx-auto mt-5 max-w-2xl text-lg text-brand-charcoal-soft sm:text-xl">
-			PokeBell watches the entire UK Trading Card Game market for you and sends an instant
-			alert straight to your phone the moment the sealed products you want come back in
-			stock.
+			PokeBell watches the entire UK Trading Card Game market for you and sends an instant alert
+			straight to your phone the moment the sealed products you want come back in stock.
 		</p>
 
 		<div class="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
 			<a
-				href="https://apps.apple.com/gb/app/pokebell/id6792279766"
+				href={APP_STORE_URL}
 				target="_blank"
 				rel="noopener noreferrer"
 				class="w-full rounded-full bg-brand-red px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-brand-red/20 transition-colors hover:bg-brand-red-dark sm:w-auto"
@@ -135,8 +132,7 @@
 	 */
 	:global(.bell-bloom) {
 		filter: drop-shadow(0 0 6px rgba(230, 170, 104, 0.6))
-			drop-shadow(0 0 14px rgba(230, 170, 104, 0.35))
-			drop-shadow(0 0 28px rgba(202, 60, 37, 0.2));
+			drop-shadow(0 0 14px rgba(230, 170, 104, 0.35)) drop-shadow(0 0 28px rgba(202, 60, 37, 0.2));
 		animation: bloom-pulse 3s ease-in-out infinite;
 	}
 
@@ -144,13 +140,11 @@
 		0%,
 		100% {
 			filter: drop-shadow(0 0 6px rgba(230, 170, 104, 0.6))
-				drop-shadow(0 0 14px rgba(230, 170, 104, 0.35))
-				drop-shadow(0 0 28px rgba(202, 60, 37, 0.2));
+				drop-shadow(0 0 14px rgba(230, 170, 104, 0.35)) drop-shadow(0 0 28px rgba(202, 60, 37, 0.2));
 		}
 		50% {
 			filter: drop-shadow(0 0 10px rgba(230, 170, 104, 0.8))
-				drop-shadow(0 0 20px rgba(230, 170, 104, 0.5))
-				drop-shadow(0 0 36px rgba(202, 60, 37, 0.3));
+				drop-shadow(0 0 20px rgba(230, 170, 104, 0.5)) drop-shadow(0 0 36px rgba(202, 60, 37, 0.3));
 		}
 	}
 

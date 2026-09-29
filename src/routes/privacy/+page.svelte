@@ -1,10 +1,14 @@
 <script lang="ts">
-	import { layoutState } from '$lib/state.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-
-	layoutState.title = 'PokeBell — Privacy Policy';
 </script>
+
+<Seo
+	title="PokeBell — Privacy Policy"
+	description="How PokeBell handles your data: the minimal information we collect, how we use it, the third-party services we rely on, and your data-deletion rights."
+	canonicalPath="/privacy"
+/>
 
 <Nav />
 
@@ -20,10 +24,10 @@
 				Introduction
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
-				PokeBell ("we", "our", "us") operates the PokeBell mobile application. This Privacy
-				Policy explains what information we collect, how we use it, and your choices regarding
-				your data. We are committed to protecting your privacy and collecting only the minimum
-				data necessary to provide our service.
+				PokeBell ("we", "our", "us") operates the PokeBell mobile application. This Privacy Policy
+				explains what information we collect, how we use it, and your choices regarding your data.
+				We are committed to protecting your privacy and collecting only the minimum data necessary
+				to provide our service.
 			</p>
 		</section>
 
@@ -32,26 +36,26 @@
 				What Data We Collect
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed mb-4">
-				We collect minimal data to deliver our notification service. We do not collect your
-				name, email address, physical address, or any other personally identifiable information.
+				We collect minimal data to deliver our notification service. We do not collect your name,
+				email address, physical address, or any other personally identifiable information.
 			</p>
 			<ul class="font-body text-brand-charcoal-soft leading-relaxed list-disc pl-6 space-y-2">
 				<li>
-					<strong>Anonymous Identifier</strong> — a randomly generated identifier created when
-					you first open the app, not linked to any personal information.
+					<strong>Anonymous Identifier</strong> — a randomly generated identifier created when you first
+					open the app, not linked to any personal information.
 				</li>
 				<li>
-					<strong>Push Notification Token</strong> — a device-specific token used to deliver push
-					notifications to your device.
+					<strong>Push Notification Token</strong> — a device-specific token used to deliver push notifications
+					to your device.
 				</li>
 				<li>
-					<strong>Subscription and Purchase Data</strong> — managed by RevenueCat on our behalf,
-					including your subscription status, purchase history, and billing period. Payment
-					details are handled entirely by the App Store or Google Play Store.
+					<strong>Subscription and Purchase Data</strong> — managed by RevenueCat on our behalf, including
+					your subscription status, purchase history, and billing period. Payment details are handled
+					entirely by the App Store or Google Play Store.
 				</li>
 				<li>
-					<strong>Basic Device Information</strong> — platform (iOS/Android) and app version, used
-					to ensure notifications are delivered correctly.
+					<strong>Basic Device Information</strong> — platform (iOS/Android) and app version, used to
+					ensure notifications are delivered correctly.
 				</li>
 			</ul>
 		</section>
@@ -138,9 +142,9 @@
 				Children's Privacy
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
-				PokeBell is not directed at children under the age of 13. We do not knowingly collect
-				data from children under 13. If you believe a child under 13 has provided us with data,
-				please contact us at
+				PokeBell is not directed at children under the age of 13. We do not knowingly collect data
+				from children under 13. If you believe a child under 13 has provided us with data, please
+				contact us at
 				<a
 					href="mailto:support@pokebell.co.uk"
 					class="text-brand-red hover:text-brand-red-dark underline">support@pokebell.co.uk</a
@@ -155,19 +159,18 @@
 			</h2>
 			<ul class="font-body text-brand-charcoal-soft leading-relaxed list-disc pl-6 space-y-2">
 				<li>
-					Your data may be processed on servers located outside your country of residence,
-					including in the United States.
+					Your data may be processed on servers located outside your country of residence, including
+					in the United States.
 				</li>
 				<li>
-					We process your data on the basis of legitimate interests, specifically to deliver
-					the service you requested.
+					We process your data on the basis of legitimate interests, specifically to deliver the
+					service you requested.
 				</li>
 				<li>
 					PokeBell is operated from the United Kingdom and can be contacted at
 					<a
 						href="mailto:support@pokebell.co.uk"
-						class="text-brand-red hover:text-brand-red-dark underline"
-						>support@pokebell.co.uk</a
+						class="text-brand-red hover:text-brand-red-dark underline">support@pokebell.co.uk</a
 					>.
 				</li>
 			</ul>
@@ -178,9 +181,8 @@
 				Changes to This Policy
 			</h2>
 			<p class="font-body text-brand-charcoal-soft leading-relaxed">
-				We may update this Privacy Policy from time to time. Any changes will be reflected on
-				this page with an updated "Last updated" date. We encourage you to review this page
-				periodically.
+				We may update this Privacy Policy from time to time. Any changes will be reflected on this
+				page with an updated "Last updated" date. We encourage you to review this page periodically.
 			</p>
 		</section>
 

@@ -22,3 +22,20 @@ export function roundDownTo(value: number, step = 10): number {
 
 /** The public-facing shop count, rounded down to the nearest 10 (e.g. 190). */
 export const SUPPORTED_SHOP_COUNT_DISPLAY = roundDownTo(SUPPORTED_SHOP_COUNT);
+
+/**
+ * The canonical site origin (no trailing slash). Used to build absolute URLs
+ * for SEO tags (canonical, og:url, og:image) and the sitemap.
+ */
+export const SITE_URL = 'https://pokebell.co.uk';
+
+/** The public App Store listing for the iOS app (single source of truth). */
+export const APP_STORE_URL = 'https://apps.apple.com/gb/app/pokebell/id6792279766';
+
+/**
+ * Resolves a site-relative path (e.g. `/blog/foo`) to an absolute URL against
+ * `SITE_URL`. Absolute inputs (e.g. an external image URL) are returned as-is.
+ */
+export function absUrl(path: string): string {
+	return new URL(path, SITE_URL).href;
+}

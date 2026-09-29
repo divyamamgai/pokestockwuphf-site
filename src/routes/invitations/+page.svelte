@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { layoutState } from '$lib/state.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import type { ProductGroup } from '$lib/types';
 	import invitationGroups from '$lib/data/products/invitations.json';
 	import ProductListing from '$lib/components/ProductListing.svelte';
@@ -8,9 +8,13 @@
 
 	// Single source of truth: add a shop or products by editing invitations.json.
 	const groups = invitationGroups as ProductGroup[];
-
-	layoutState.title = 'PokeBell — Invitation Products';
 </script>
+
+<Seo
+	title="PokeBell — Invitation Products"
+	description="Sealed Pokémon TCG products currently available to buy by invitation, grouped by shop — updated as new invite drops go live."
+	canonicalPath="/invitations"
+/>
 
 <Nav />
 

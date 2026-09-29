@@ -1,10 +1,14 @@
 <script lang="ts">
-	import { layoutState } from '$lib/state.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-
-	layoutState.title = 'PokeBell — Support';
 </script>
+
+<Seo
+	title="PokeBell — Support"
+	description="Get help with PokeBell: getting started, managing your subscription, notification troubleshooting and data deletion requests."
+	canonicalPath="/support"
+/>
 
 <Nav />
 
@@ -16,9 +20,7 @@
 	</p>
 
 	<div class="mt-10 space-y-8">
-		<section
-			class="rounded-xl border border-brand-cream-dark bg-white p-6 shadow-sm sm:p-8"
-		>
+		<section class="rounded-xl border border-brand-cream-dark bg-white p-6 shadow-sm sm:p-8">
 			<h2 class="font-display text-xl font-bold text-brand-charcoal sm:text-2xl mb-4">
 				Contact Us
 			</h2>
@@ -39,14 +41,11 @@
 
 			<div class="space-y-6">
 				<div>
-					<h3 class="font-display text-lg font-bold text-brand-charcoal mb-2">
-						Getting Started
-					</h3>
+					<h3 class="font-display text-lg font-bold text-brand-charcoal mb-2">Getting Started</h3>
 					<p class="font-body text-brand-charcoal-soft leading-relaxed">
-						Download PokeBell from the App Store or Google Play Store. When you first open the
-						app, the app sets up automatically — no sign-up required. You'll
-						immediately start receiving free-tier stock alerts for products at supported
-						retailers.
+						Download PokeBell from the App Store or Google Play Store. When you first open the app,
+						the app sets up automatically — no sign-up required. You'll immediately start receiving
+						free-tier stock alerts for products at supported retailers.
 					</p>
 				</div>
 
@@ -55,8 +54,8 @@
 						Managing Your Subscription
 					</h3>
 					<p class="font-body text-brand-charcoal-soft leading-relaxed">
-						PokeBell Standard ($4.99/month) unlocks all stock alerts, notification rules, and
-						custom sounds. To manage or cancel your subscription:
+						PokeBell Standard ($4.99/month) unlocks all stock alerts, notification rules, and custom
+						sounds. To manage or cancel your subscription:
 					</p>
 					<ul
 						class="font-body text-brand-charcoal-soft leading-relaxed list-disc pl-6 space-y-2 mt-2"
@@ -69,8 +68,8 @@
 						</li>
 					</ul>
 					<p class="font-body text-brand-charcoal-soft leading-relaxed mt-2">
-						Cancellation takes effect at the end of your current billing period. You retain
-						access to Standard features until then.
+						Cancellation takes effect at the end of your current billing period. You retain access
+						to Standard features until then.
 					</p>
 				</div>
 
@@ -81,25 +80,15 @@
 					<p class="font-body text-brand-charcoal-soft leading-relaxed mb-2">
 						If you're not receiving notifications, try the following:
 					</p>
-					<ul
-						class="font-body text-brand-charcoal-soft leading-relaxed list-disc pl-6 space-y-2"
-					>
+					<ul class="font-body text-brand-charcoal-soft leading-relaxed list-disc pl-6 space-y-2">
+						<li>Ensure notifications are enabled for PokeBell in your device settings.</li>
+						<li>Check that your device is connected to the internet.</li>
 						<li>
-							Ensure notifications are enabled for PokeBell in your device settings.
+							On Android, ensure PokeBell is excluded from battery optimisation (Settings → Apps →
+							PokeBell → Battery → Unrestricted).
 						</li>
-						<li>
-							Check that your device is connected to the internet.
-						</li>
-						<li>
-							On Android, ensure PokeBell is excluded from battery optimisation (Settings →
-							Apps → PokeBell → Battery → Unrestricted).
-						</li>
-						<li>
-							Try closing and reopening the app to refresh your push token.
-						</li>
-						<li>
-							If the issue persists, contact us and include your device model and OS version.
-						</li>
+						<li>Try closing and reopening the app to refresh your push token.</li>
+						<li>If the issue persists, contact us and include your device model and OS version.</li>
 					</ul>
 				</div>
 
@@ -111,12 +100,10 @@
 						To request deletion of your data, email
 						<a
 							href="mailto:support@pokebell.co.uk"
-							class="text-brand-red hover:text-brand-red-dark underline"
-							>support@pokebell.co.uk</a
+							class="text-brand-red hover:text-brand-red-dark underline">support@pokebell.co.uk</a
 						>
-						with the subject line "Data Deletion Request". We will delete your associated data
-						from our systems. Note that uninstalling the app automatically
-						removes your push notification token.
+						with the subject line "Data Deletion Request". We will delete your associated data from our
+						systems. Note that uninstalling the app automatically removes your push notification token.
 					</p>
 				</div>
 			</div>

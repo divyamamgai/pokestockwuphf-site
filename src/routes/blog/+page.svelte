@@ -1,11 +1,15 @@
 <script lang="ts">
-	import { layoutState } from '$lib/state.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import { sortedPosts, formatDate } from '$lib/data/blog/posts';
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-
-	layoutState.title = 'PokeBell — Blog';
 </script>
+
+<Seo
+	title="PokeBell — Blog"
+	description="News, restock watch and buying guides for the latest Pokémon TCG sealed releases, from the PokeBell team."
+	canonicalPath="/blog"
+/>
 
 <Nav />
 
